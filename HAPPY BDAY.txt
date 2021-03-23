@@ -1,0 +1,59 @@
+#include <iostream>
+#include <windows.h>
+using namespace std;
+int C = 523; // DO - dura 191ms - 382ms
+int D = 587; // RE - dura 170ms - 340ms
+int E = 659; // MI - dura 152ms - 304ms
+int F = 698; // FA - dura 143ms - 286ms
+int G = 740; // SOL - dura 135ms - 270ms
+int A = 880; // LA - dura 114ms - 228ms
+int B = 988; // SI - dura 110ms - 220ms
+
+
+
+void BDAY()
+{
+    // CCDCFE
+    Beep(C, 382);
+    Beep(C, 382);
+    Beep(D, 340);
+    Beep(C, 382);
+    Beep(F, 286);
+    Beep(E, 304);
+    // CCDCGF
+
+    Sleep(1000);
+
+    Beep(C, 382);
+    Beep(C, 382);
+    Beep(D, 340);
+    Beep(C, 382);
+    Beep(G, 270);
+    Beep(F, 286);
+    // CCCAFE
+
+    Sleep(1500);
+    Beep(C, 382);
+    Beep(C, 382);
+    Beep(C, 382);
+    Beep(A, 228);
+    Beep(F, 286);
+    Beep(E, 304);
+    //DBBAFGF
+
+
+    Beep(D, 340);
+    Beep(B, 220);
+    Beep(B, 220);
+    Beep(A, 228);
+    Beep(F, 286);
+    Beep(G, 270);
+}
+
+int main()
+{
+    BDAY();
+    return 0;
+}
+
+
